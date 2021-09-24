@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void){
+int n,i,num;
+char FIN='n';
+
+	while(FIN!='s' && FIN!='S')
+{
+	
+printf("\n indica el numero :");
+scanf("%d",&n);
+num=1;
+   for(i=1;i<=n;i++)
+        num = num * i;
+    printf("\n El factorial del numero es : %d", num);
+
+
+     printf(" ¿Quieres salir? Si/No \n");
+     scanf("%s",&FIN);}
+printf("¡Gracias !  ");
+return 0;
+}
