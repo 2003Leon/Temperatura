@@ -1,0 +1,19 @@
+#include <stdio.h> 
+#include <conio.h>
+
+int main(){
+int k = 7 ; 
+int l = 7 ;
+int matriz[7][7],n,m, vector[7]; 
+printf("Matriz de 7x7 \n");
+for(n=0; n<k; n++)
+for(m=0; m<l; m++){ 
+printf("indica el valor de la posicion %d,%d: ",n,m); 
+scanf("%d",&matriz[n][m]);}
+printf("Los valores obtenidos son:\n\n"); 
+for(n=0; n<k; n++){
+for(m=0; m<l; m++){ 
+printf("%d\t",matriz[n][m]);}
+printf("\n");}
+getch();
+return 0;}
