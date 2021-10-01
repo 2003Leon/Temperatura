@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int k;
+	int l;
+	int matriz[100][100], n,m, vector[100],vector2[100];
+	printf("Indica el numero de filas de la matriz: ");
+	scanf("%d",&k);
+	printf("Indica el numero de columnas de la matriz: ");
+	scanf("%d",&l);
+	
+	for(n=0; n<l; n++)
+	for(m=0; m<k; m++){
+		
+	printf("Indica el valor de la posicion %d, %d: ",n,m);
+	scanf("%d",&matriz[n][m]);
+	vector[n]=vector[n]+matriz[n][m];
+	vector2[m]=vector2[m]+matriz[n][m];}
+	
+	printf("Los valores obtenidos son: \n\n");
+	for(n=0; n<k; n++){
+	for(m=0; m<l; m++){
+	printf("%d \t",matriz[n][m]);
+}
+	printf("\n");
+	}
+	printf("\n");
+	printf("LA SUMA DE LAS FILAS SON:\n");
+	for(n=0; n<k; n++){
+	printf("%d \n",vector[n]);
+	}
+	printf("\n");	
+	printf("LA SUMA DE LAS COLUMNAS SON:\n");
+	for(m=0; m<l; m++){
+	printf("%d \n",vector2[m]);
+	}
+	getch();
+
+	return 0;
+}
