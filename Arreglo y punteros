@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+float arreglo[]={7,8.3,8,9,10,9,9.5};
+float *p;
+void vertical (int j);
+void horizontal (int j);
+int main ()
+
+{
+	int total =8;
+	vertical(total);
+	horizontal(total);
+	return 0;
+	
+}
+void vertical (int j){
+	int i;
+	p=&arreglo[0];
+	for (i=0; i<j; i++)
+	{
+		printf ("posicion %d=%1.1f\n",i,*(p+i));
+	}
+}
+void horizontal (int j){
+	int i;
+	p=&arreglo [0];
+	for(i=0;i<j; i++)
+
+{printf( "posicion %d=1.1f\t",i, *(p+i));
+}
+}
