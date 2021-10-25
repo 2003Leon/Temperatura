@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+
+void Resultado (int valor){
+	      for (int y=1; y <= valor; y++)
+		  {
+    for (int x=0; x !=y; x++)
+	{
+	printf("%d", x+1);
+		}
+		printf("\n"); 
+	}
+}
+
+main(){
+
+	int valor;
+		printf("\n Introduce el valor:");
+	        scanf("%d",&valor); 
+	Resultado (valor);
+	getch();
+	
+	
+	return 0;
+}
