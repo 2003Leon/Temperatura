@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+    int main(){
+    int agru[25]={0};
+    int num,j,aux,min;
+    float a;
+    for(num=0; num<25; num++){
+        printf("Dame el numero : ");
+        scanf("%d", &agru[num]);}
+    for(num=0; num<25; num++){
+        min=num;
+    for(j=num+1; j<25; j++){
+    if(agru[j]<agru[min]){
+        min=j;}}
+        aux=agru[num];
+        agru[num]=agru[min];
+        agru[min]=aux;
+        a=a+agru[num];}
+        printf("Menor a Mayor \n");
+    for(num=0; num<25; num++){
+        printf("%i\n", agru[num]);}
+        printf("Media: %.2f", a/25.0);
+}
