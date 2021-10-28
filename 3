@@ -1,0 +1,20 @@
+#include <stdio.h>
+void table (float*p,int n);
+int main (void){
+int num;
+
+float jkl[5]={0};
+for (num=0; num<5; num++){
+printf("volor posicional %d:", num+1);
+scanf("%f",&jkl[num]);}
+printf("\nCl\t");
+printf("C2\t");
+printf("C3\n");
+table(jkl,5);
+return 0;}
+void table(float *p, int n){
+	int num;
+	for (num=0; num<5; num++){
+	printf("a\t");
+    printf("%.2f\t",p[num]);
+    printf("%p\n",&p[num]);}}
