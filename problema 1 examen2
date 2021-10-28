@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+    int agru[10];
+    float media;
+    
+    int a,nume=0,suma[10]={0};
+    
+    for(a=0; a<10; a++){
+    	
+    if(agru[nume]>0){
+    	
+    printf("Indica el numero %d : ", a+1);
+    scanf("%d", &agru[nume]);}
+    
+    suma[nume]=suma[nume]+agru[nume];}
+    
+    if(suma[nume]>0){
+    printf("La media de los numeros es %.2f", suma[nume]/10.0);}
+    return 0;
+}
